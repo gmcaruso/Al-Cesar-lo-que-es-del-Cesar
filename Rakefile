@@ -20,6 +20,14 @@ if ['development', 'test', 'travis'].include?(PADRINO_ENV)
     end
   end
 
+  task :travis do
+  ["rake spec_report", "rake cucumber"].each do |cmd|
+    puts "Starting to run #{cmd}..."
+    system("export DISPLAY=:99.0 && bundle exec #{cmd}")
+    raise "#{cmd} failed!" unless $?.exitstatus == 0
+    end
+  end
+
   task :version do
     require './lib/version.rb'
     puts Version.current
