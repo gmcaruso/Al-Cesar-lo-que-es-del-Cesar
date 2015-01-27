@@ -3,7 +3,6 @@ require File.expand_path(File.dirname(__FILE__) + "/../config/boot")
 
 require 'capybara/dsl'
 require 'capybara/rspec'
-require 'capybara/rails'
 
 RSpec.configure do |conf|
   conf.include Rack::Test::Methods
