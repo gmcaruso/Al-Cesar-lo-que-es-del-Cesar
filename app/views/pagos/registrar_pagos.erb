@@ -1,0 +1,15 @@
+<h1>Registro de pagos</h1>
+
+
+<% form_for(@pago, '/pagos/registrar') do |f| %>
+	<%= f.label :servicio  %>
+	<%= f.text_field :servicio %><br/>
+	<%= f.label :monto  %>
+	<%= f.text_field :monto %><br/>
+	<%= f.label :pagador  %>
+ 	<%= f.text_field :pagador %><br/>
+	<%= f.label :fecha_de_pago  %>
+	<%= f.password_field :fecha_de_pago %><br/>
+
+  <%= f.submit "Registrar Pago", :class => "btn btn-primary" %>
+<% end %>
