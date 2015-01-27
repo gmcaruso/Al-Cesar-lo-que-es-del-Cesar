@@ -65,6 +65,7 @@ group :test do
 	gem 'rspec'
 	gem 'rspec_junit_formatter'
 	gem 'capybara'
+	gem "capybara-screenshot"
 	gem 'selenium-webdriver'
 	gem 'cucumber'
 	gem 'rack-test', :require => 'rack/test'

@@ -13,7 +13,7 @@ class Pago
   end
 
   def self.monto_por_persona
-    Pago.monto_total / Pago.all.size
+    Pago.monto_total.to_f / Pago.all.size.to_f
   end
 
   def self.pago_por_persona(nombre_pagador)

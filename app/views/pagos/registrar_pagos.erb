@@ -7,17 +7,17 @@
 	<% form_for(@pago, '/pagos/registrar', html: { class: "form-inline" }) do |f| %>
 		<div class="form-group" align="left">
 		  <%= f.label :servicio  %>
-		  <%= f.text_field :servicio, class: "form-control", required: true %><br/>
+		  <%= f.text_field :servicio, id:"servicio_input",class: "form-control", required: true %><br/>
 		</div>
 
 		<div class="form-group" align="left">
 		  <%= f.label :monto  %>
-		  <%= f.text_field :monto, class: "form-control", required: true %><br/>
+		  <%= f.text_field :monto, id:"monto_input",class: "form-control", required: true %><br/>
 		</div>
 
 		<div class="form-group" align="left">
 		  <%= f.label :pagador  %>
-		  <%= f.text_field :pagador, class: "form-control", required: true %><br/>
+		  <%= f.text_field :pagador, id:"pagador_input",class: "form-control", required: true %><br/>
 		</div>
 
 		<div class="form-group" align="left">
@@ -26,7 +26,7 @@
 		</div>
 
 		<div class="text-center">
-		  <%= f.submit "Registrar Pago", :class => "btn btn-primary" %>
+		  <%= f.submit "Registrar Pago", id:"registrar_pago_boton", :class => "btn btn-primary" %>
 		</div>
 	<% end %>
 

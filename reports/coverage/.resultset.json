@@ -1,0 +1,87 @@
+{
+  "Cucumber Features": {
+    "coverage": {
+      "/home/sysone/Desktop/Gabo/al-cesar-lo-que-es-del-cesar/app/controllers/home.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/sysone/Desktop/Gabo/al-cesar-lo-que-es-del-cesar/app/controllers/liquidaciones.rb": [
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/home/sysone/Desktop/Gabo/al-cesar-lo-que-es-del-cesar/app/controllers/pagos.rb": [
+        1,
+        null,
+        1,
+        8,
+        8,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        4,
+        4,
+        4,
+        4,
+        null,
+        4,
+        1,
+        1,
+        null,
+        3,
+        3,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/sysone/Desktop/Gabo/al-cesar-lo-que-es-del-cesar/app/helpers/home_helper.rb": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/sysone/Desktop/Gabo/al-cesar-lo-que-es-del-cesar/app/helpers/liquidaciones_helper.rb": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/sysone/Desktop/Gabo/al-cesar-lo-que-es-del-cesar/app/helpers/pagos_helper.rb": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1422397803
+  }
+}

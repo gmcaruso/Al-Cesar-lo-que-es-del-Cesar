@@ -17,7 +17,6 @@ AlCesarLoQueEsDelCesar::App.controllers :pagos do
     fecha_de_pago = params[:pago][:fecha_de_pago]
 
     if (monto.to_i  < 0)
-      flash.now[:error] = 'No se permite pagar con un monto menor a cero'
       render 'pagos/registrar_pagos'
     else
       pago=Pago.create(servicio: servicio, pagador: pagador, monto: monto, fecha_de_pago: fecha_de_pago)

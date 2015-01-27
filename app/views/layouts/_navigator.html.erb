@@ -1,13 +1,14 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand">Cesar</a>
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home</a></li>
+        <li class="active"><a href="/">Al Cesar lo que es del Cesar - Home</a></li>
+        <li><a href="<%= url(:pagos, :registrarpagos) %>">Registrar un Pago</a></li>
         <li><a href="<%= url(:pagos, :verpagos) %>">Ver Pagos</a></li>
         <li><a href="<%= url(:liquidaciones, :liquidacion) %>">Liquidaciones</a></li>
+
       </ul>
     </div>
   </div>

@@ -1,7 +1,19 @@
-Given(/^"(.*?)" registro un pago de "(.*?)"$/) do |arg1, arg2|
-  
+#!/bin/env ruby
+# encoding: utf-8
+
+Given(/^estoy en la pagina de Registro de pagos$/) do
+  visit (SECCION_REGISTRAR_PAGOS)
+  page.should have_content("Registro de pagos")
 end
 
-Given(/^paga el servicio "(.*?)" con un monto de "(.*?)" el dia "(.*?)"$/) do |arg1, arg2, arg3|
-  
+When(/^hago click en "(.*?)"$/) do |boton|
+  has_button?(boton).should eq true
+  #click_link_or_button('Registrar Pago')
 end
+
+Then(/^se muestra el mensaje "(.*?)"$/) do |mensaje|
+  page.should have_content(mensaje)
+end
+
+
+
