@@ -1,15 +1,34 @@
-<h1>Registro de pagos</h1>
+<div class="container">
+  <div class="jumbotron">
+
+	<h2 class="text-center">Registro de pagos</h2>
 
 
-<% form_for(@pago, '/pagos/registrar') do |f| %>
-	<%= f.label :servicio  %>
-	<%= f.text_field :servicio %><br/>
-	<%= f.label :monto  %>
-	<%= f.text_field :monto %><br/>
-	<%= f.label :pagador  %>
- 	<%= f.text_field :pagador %><br/>
-	<%= f.label :fecha_de_pago  %>
-	<%= f.text_field :fecha_de_pago %><br/>
+	<% form_for(@pago, '/pagos/registrar', html: { class: "form-inline" }) do |f| %>
+		<div class="form-group" align="left">
+		  <%= f.label :servicio  %>
+		  <%= f.text_field :servicio, class: "form-control", required: true %><br/>
+		</div>
 
-  <%= f.submit "Registrar Pago", :class => "btn btn-primary" %>
-<% end %>
+		<div class="form-group" align="left">
+		  <%= f.label :monto  %>
+		  <%= f.text_field :monto, class: "form-control", required: true %><br/>
+		</div>
+
+		<div class="form-group" align="left">
+		  <%= f.label :pagador  %>
+		  <%= f.text_field :pagador, class: "form-control", required: true %><br/>
+		</div>
+
+		<div class="form-group" align="left">
+		  <%= f.label :fecha_de_pago  %>
+		  <input class="form-control" required="required" id="pago_fecha_de_pago" name="pago[fecha_de_pago]" type="date">
+		</div>
+
+		<div class="text-center">
+		  <%= f.submit "Registrar Pago", :class => "btn btn-primary" %>
+		</div>
+	<% end %>
+
+  </div>
+</div>

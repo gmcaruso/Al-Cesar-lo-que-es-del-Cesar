@@ -1,0 +1,21 @@
+<div class="container">
+	<div class="jumbotron">
+		<h2 class="text-center">Liquidación</h2>
+		<hr>
+		<span>Monto a pagar: $<%= @monto_total %></span>
+		<br>
+		<span>Monto a pagar por persona: $<%= @monto_por_persona %></span>
+		<br>
+		<% @habitantes.each do |nombre_habitante, pago| %>
+			<% if pago < 0 %>
+				<span>A <%= nombre_habitante %> le deben <%= pago * -1 %></span>
+			<% elsif pago == 0 %>
+				<span><%= nombre_habitante %> está al día</span>
+			<% else %>
+				<span><%= nombre_habitante %> debe <%= pago %></span>
+			<% end %>
+			<br>
+
+		<% end %>
+	</div>
+</div>

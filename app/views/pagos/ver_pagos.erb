@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="jumbotron">
+
+    <h2 class="text-center">Pagos registrados</h2>
+
+
+    <table class="table table-bordered">
+      <tr>
+        <th>Fecha</th>
+        <th>Servicio</th>
+        <th>Pagador</th>
+        <th>Monto</th>
+      </tr>
+
+      <% @pagos.each do |pagos| %>
+          <tr>
+            <td>
+              <%= pagos.fecha_de_pago %>
+            </td>
+            <td>
+              <%= pagos.servicio %>
+            </td>
+            <td>
+              <%= pagos.pagador %>
+            </td>
+            <td>
+              <%= pagos.monto %>
+            </td>
+          </tr>
+
+      <% end %>
+
+    </table>
+
+  </div>
+</div>

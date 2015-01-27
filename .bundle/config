@@ -1,2 +1,2 @@
 ---
-BUNDLE_WITHOUT: staging:production
+BUNDLE_WITHOUT: development:staging:production
