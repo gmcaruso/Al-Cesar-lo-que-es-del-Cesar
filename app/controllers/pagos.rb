@@ -11,11 +11,11 @@ AlCesarLoQueEsDelCesar::App.controllers :pagos do
     @monto = params[:pago][:monto]
     fecha_de_pago = params[:pago][:fecha_de_pago]
     
-    if (@monto < 0)
+    if (@monto.to_i  < 0)
       flash.now[:error] = 'No se permite pagar con un monto menor a cero'
-      redirect 'pagos/registrar_pagos'
+      render 'pagos/registrar_pagos'
     else
-      redirect 'home/index'
+      render 'home/index'
     end
   end
 
